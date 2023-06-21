@@ -18,7 +18,7 @@ Install dependencies:
 
 *cd blog-site*
 
-*npm install*
+Install dependencies in package.json file using *npm install*
 
 Set up the MySQL database:
 
