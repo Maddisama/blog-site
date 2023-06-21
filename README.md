@@ -1,7 +1,7 @@
-#Blog Site Application
+# Blog Site Application
 This is a blog site application built with React, Express, Node.js, and MySQL. It allows users to create, read, update, and delete blog posts.
 
-##Prerequisites
+## Prerequisites
 Before running the application, make sure you have the following installed:
 
 Node.js (version X.X.X)
@@ -10,8 +10,9 @@ MySQL (version X.X.X)
 
 Git (version X.X.X)
 
-##Installation
-###Clone the repository:
+## Installation
+
+Clone the repository:
 git clone <repository_url>
 Install dependencies:
 
@@ -25,7 +26,7 @@ Configure the database connection:
 
 Edit and update the database connection details.
 
-##Usage
+## Usage
 To start the application, run the following command:
 
 *npm start*
