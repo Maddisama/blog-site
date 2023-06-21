@@ -17,11 +17,15 @@ git clone <repository_url>
 Install dependencies:
 
 *cd blog-site*
+
 *npm install*
+
 Set up the MySQL database:
 
 Create a new MySQL database.
+
 Import the provided database.sql file to set up the necessary tables.
+
 Configure the database connection:
 
 Edit and update the database connection details.
