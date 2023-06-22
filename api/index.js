@@ -17,6 +17,11 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(function (req, res, next) {
+  req.headers.host = "https://blog-site-c6c0.onrender.com"; // Replace 'your-domain.com' with your actual domain
+  next();
+});
+
 app.use(express.json());
 app.use(cookieParser());
 
