@@ -7,21 +7,6 @@ import multer from "multer";
 
 const app = express();
 
-// for render hosting
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
-
-app.use(function (req, res, next) {
-  req.headers.host = "https://blog-site-c6c0.onrender.com"; // Replace 'your-domain.com' with your actual domain
-  next();
-});
-
 app.use(express.json());
 app.use(cookieParser());
 
@@ -45,6 +30,6 @@ app.use("/api/posts", postRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 
-app.listen(8800, () => {
+app.listen(process.env.PORT || 8800, () => {
   console.log("Connected.");
 });
