@@ -28,27 +28,6 @@ const Home = () => {
     fetchData();
   }, [cat]);
 
-  // const posts = [
-  //   {
-  //     id: 1,
-  //     title: "Lorem ipsum dolor sit amet consectetur",
-  //     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsa, debitis iure quis dicta consectetur itaque, atque quos est voluptas nostrum optio quaerat et nemo minus cupiditate obcaecati illo expedita",
-  //     img: "https://images.pexels.com/photos/672101/pexels-photo-672101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Lorem ipsum dolor sit amet consectetur",
-  //     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsa",
-  //     img: "https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Lorem ipsum dolor sit amet consectetur",
-  //     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsa, debitis iure quis dicta consectetur itaque, atque quos est voluptas nostrum optio quaerat et nemo minus cupiditate obcaecati illo expedita",
-  //     img: "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  //   },
-  // ];
-
   const getText = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html");
     return doc.body.textContent;
